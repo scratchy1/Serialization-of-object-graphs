@@ -1,0 +1,10 @@
+class Node implements Serializable{
+String value;
+private List<Node> edgesTo = new ArrayList<Node>();
+public Node(String value) {
+this.value = value;
+}
+void addEdgeTo(Node node) {
+edgesTo.add(node);
+}
+}
